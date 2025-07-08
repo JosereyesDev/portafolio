@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub, faWhatsapp, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
@@ -54,17 +54,17 @@ const Contact = () => {
               Estoy interesado en oportunidades para colaborar en proyectos innovadores y desafiantes. Si tienes alguna propuesta, pregunta o simplemente quieres saludar, no dudes en contactarme a través del formulario o por mis redes sociales.
             </p>
             <div className="hero-social">
-              <a href="https://www.linkedin.com/in/esteban-molina-5342972a3/" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a href="https://www.linkedin.com/in/josereyesdev/" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
-              <a href="https://github.com/devsteve1" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a href="https://github.com/JosereyesDev" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="https://wa.me/5513612613" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a href="https://wa.me/584121234253" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FontAwesomeIcon icon={faWhatsapp} />
               </a>
-              <a href="https://www.tiktok.com/@dev_stevee?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="social-icon">
-                <FontAwesomeIcon icon={faTiktok} />
+              <a href="https://www.instagram.com/josemreyesg/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
           </div>

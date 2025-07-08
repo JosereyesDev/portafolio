@@ -50,13 +50,13 @@ const Header = () => {
           </ul>
         </nav>
         <div className="social-links">
-  <a href="https://www.linkedin.com/in/esteban-molina-5342972a3/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/josereyesdev/" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faLinkedin} />
   </a>
-  <a href="https://github.com/EstebanMxca" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/JosereyesDev" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faGithub} />
   </a>
-  <a href="https://wa.me/5564680264" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/584121234253" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faWhatsapp} />
   </a>
 </div>

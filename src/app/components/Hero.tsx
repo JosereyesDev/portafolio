@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import TechOrbit from './TechOrbit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub, faWhatsapp, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Hero = () => {
   return (
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           <div className="hero-social">
             <a
-              href="https://www.linkedin.com/in/esteban-molina-5342972a3/"
+              href="https://www.linkedin.com/in/josereyesdev/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -40,7 +40,7 @@ const Hero = () => {
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
             <a
-              href="https://github.com/EstebanMxca"
+              href="https://github.com/JosereyesDev"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -48,7 +48,7 @@ const Hero = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="https://wa.me/5564680264"
+              href="https://wa.me/584121234253"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -56,12 +56,12 @@ const Hero = () => {
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
             <a
-              href="https://www.tiktok.com/@dev_stevee?is_from_webapp=1&sender_device=pc"
+              href="https://www.instagram.com/josemreyesg/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
             >
-              <FontAwesomeIcon icon={faTiktok} />
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
         </div>

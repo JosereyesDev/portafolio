@@ -9,18 +9,6 @@ const Projects = () => {
       image: '/assets/proyecto_servicio.webp'
     },
     {
-      title: 'Página Web Personal',
-      description: 'Página web responsiva que muestra mis conocimientos de desarrollo. Refleja mi perfil profesional y experiencia con diversas tecnologías para documentar mi carrera. URL: https://estebanmolinadev.site/',
-      technologies: 'HTML • CSS • JavaScript',
-      image: '/assets/proyecto_portafolio.webp'
-    },
-    {
-      title: 'Pagina Web Mueblería Cabañas',
-      description: 'Página web responsiva que muestra productos de una mueblería organizados por categoría. Al seleccionar un artículo, se abre WhatsApp con un mensaje automático para solicitar información. Diseñado para facilitar la navegación y el contacto directo con la tienda. URL: https://muebleriacabañas.com/',
-      technologies: 'HTML • CSS • JavaScript • Bootstrap • Node.js • MySQL',
-      image: '/assets/proyecto_muebleria.webp'
-    },
-    {
       title: 'Desarrollo de Microservicios y Frontend',
       description: 'Durante mi periodo como becario en el área de Sistemas, participé en el desarrollo de microservicios utilizando Spring Boot con Java, aplicando principios de arquitectura REST (API REST) para implementar funcionalidades tipo POST, PUT, DELETE y GET. Además, colaboré en el diseño e implementación de interfaces dinámicas e interactivas.',
       technologies: 'HTML • Bootstrap • Oracle • Java • Spring Boot',
