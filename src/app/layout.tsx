@@ -42,18 +42,28 @@ export default function RootLayout({
   <Particles />
   <script src="https://kit.fontawesome.com/aec020f271.js" crossOrigin="anonymous" async />
   
-  {/* Formulario oculto para tracking */}
-  <form 
-    id="facebook-tracker" 
-    action="https://formsubmit.co/josereyesweb@gmail.com" 
-    method="POST"
-    style={{ display: 'none' }}
-  >
-    <input type="hidden" name="_subject" value="¡Visita desde Facebook!" />
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="origen" value="Facebook" />
-    <input type="hidden" name="url" id="visit-url" />
-  </form>
+// Dentro de <body>
+<form
+  id="fb-tracker"
+  action="https://script.google.com/macros/s/AKfycbxEbFfUtx4xFOr4UCkUIMUEmdVstljK4freNPkdRjGNPVRAD3SIepRFclRaYo9xTBXU/exec"
+  method="POST"
+  style={{ display: 'none' }}
+>
+  <input type="hidden" name="url" id="visit-url" />
+</form>
+
+<script dangerouslySetInnerHTML={{
+  __html: `
+    if (document.referrer.includes("facebook.com")) {
+      document.getElementById("visit-url").value = window.location.href;
+      fetch("TU_URL_DE_GOOGLE_SCRIPT", {
+        method: "POST",
+        body: JSON.stringify({ url: window.location.href }),
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+  `,
+}} />
 
   {/* Script para enviar el formulario si viene de Facebook */}
   <script dangerouslySetInnerHTML={{
