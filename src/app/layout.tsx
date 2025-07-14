@@ -37,11 +37,34 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
       </head>
-      <body className="loaded">
-        {children}
-        <Particles />
-        <script src="https://kit.fontawesome.com/aec020f271.js" crossOrigin="anonymous" async />
-      </body>
+     <body className="loaded">
+  {children}
+  <Particles />
+  <script src="https://kit.fontawesome.com/aec020f271.js" crossOrigin="anonymous" async />
+  
+  {/* Formulario oculto para tracking */}
+  <form 
+    id="facebook-tracker" 
+    action="https://formsubmit.co/josereyesweb@gmail.com" 
+    method="POST"
+    style={{ display: 'none' }}
+  >
+    <input type="hidden" name="_subject" value="¡Visita desde Facebook!" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="origen" value="Facebook" />
+    <input type="hidden" name="url" id="visit-url" />
+  </form>
+
+  {/* Script para enviar el formulario si viene de Facebook */}
+  <script dangerouslySetInnerHTML={{
+    __html: `
+      if (document.referrer.includes("facebook.com")) {
+        document.getElementById("visit-url").value = window.location.href;
+        document.getElementById("facebook-tracker").submit();
+      }
+    `,
+  }} />
+</body>
     </html>
   );
 }
