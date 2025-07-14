@@ -37,44 +37,11 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
       </head>
-     <body className="loaded">
-  {children}
-  <Particles />
-  <script src="https://kit.fontawesome.com/aec020f271.js" crossOrigin="anonymous" async />
-  
-// Dentro de <body>
-<form
-  id="fb-tracker"
-  action="https://script.google.com/macros/s/AKfycbxEbFfUtx4xFOr4UCkUIMUEmdVstljK4freNPkdRjGNPVRAD3SIepRFclRaYo9xTBXU/exec"
-  method="POST"
-  style={{ display: 'none' }}
->
-  <input type="hidden" name="url" id="visit-url" />
-</form>
-
-<script dangerouslySetInnerHTML={{
-  __html: `
-    if (document.referrer.includes("facebook.com")) {
-      document.getElementById("visit-url").value = window.location.href;
-      fetch("TU_URL_DE_GOOGLE_SCRIPT", {
-        method: "POST",
-        body: JSON.stringify({ url: window.location.href }),
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-  `,
-}} />
-
-  {/* Script para enviar el formulario si viene de Facebook */}
-  <script dangerouslySetInnerHTML={{
-    __html: `
-      if (document.referrer.includes("facebook.com")) {
-        document.getElementById("visit-url").value = window.location.href;
-        document.getElementById("facebook-tracker").submit();
-      }
-    `,
-  }} />
-</body>
+      <body className="loaded">
+        {children}
+        <Particles />
+        <script src="https://kit.fontawesome.com/aec020f271.js" crossOrigin="anonymous" async />
+      </body>
     </html>
   );
 }
